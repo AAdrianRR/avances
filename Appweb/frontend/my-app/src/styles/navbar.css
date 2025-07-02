@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(16px);
+  background: linear-gradient(90deg, #0077cce3, lch(39.08% 80.98 39.07 / 0.808), hsl(37, 92%, 46%));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor de enlaces con scroll en pantallas pequeñas */
+.navbar-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  max-width: 100%;
+  scrollbar-width: none; /* Firefox */
+}
+
+.navbar-links::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffe600;
+}

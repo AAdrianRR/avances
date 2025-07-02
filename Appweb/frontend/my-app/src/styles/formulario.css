@@ -1,0 +1,84 @@
+.formulario {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formulario h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: #2e2e2e;
+  font-weight: 600;
+}
+
+.formulario label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="tel"],
+.formulario input[type="time"],
+.formulario input[type="date"],
+.formulario select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.5rem;
+  background-color: #fdfdfd;
+  font-size: 1rem;
+}
+
+
+.formulario select[multiple] {
+  height: 140px;
+}
+
+/* Días en checkboxes */
+.dias-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Botón de acción */
+.formulario button {
+  background: linear-gradient(135deg, #447192, #47c5bf, #fcb045);
+
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #005fa3;
+}
+
+/* Mensaje de error */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+

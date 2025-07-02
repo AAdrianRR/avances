@@ -1,0 +1,92 @@
+/* Contenedor general */
+.tabla-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Encabezado */
+.tabla-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  color: #2e2e2e;
+}
+
+/* Estilo de tabla */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0 1px #e0e0e0;
+}
+
+/* Encabezados */
+th {
+  background-color: #0077cc;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Celdas de datos */
+td {
+  padding: 1rem;
+  background-color: #fafafa;
+  border-top: 1px solid #eaeaea;
+  font-size: 0.93rem;
+  color: #444444;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2f8fc;
+}
+
+/* Hover fila */
+tr:hover td {
+  background-color: #e8f4fb;
+  transition: background-color 0.25s ease;
+}
+
+/* Acciones CRUD */
+.acciones {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #fdd835;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
